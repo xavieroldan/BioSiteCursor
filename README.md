@@ -4,7 +4,7 @@ A modern, tech-inspired personal portfolio website showcasing professional exper
 
 ## 🚀 Live Demo
 
-Visit the live website: [GitHub Pages](https://xavieroldan.github.io/BioSiteCursor/)
+Visit the live website: [GitHub Pages](https://xavierroldan.com)
 
 ## 🎨 Features
 

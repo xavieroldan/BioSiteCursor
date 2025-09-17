@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Xavier Roldán - Senior Developer & Team Lead with 5+ years experience in .NET, Java, Angular, and international team coordination. Currently working at Athlon España with Mercedes Benz international team.">
-    <meta name="keywords" content="Senior Developer, .NET, Java, Angular, Scrum Master, International Team, Remote Work, Athlon España, Mercedes Benz">
+    <meta name="description" content="Xavier Roldán - Senior Developer & Team Lead with 5+ years experience in .NET, Java, Angular, and international team coordination. Currently working at MinIT for Athlon España, Athlon Belgium, and Santander Leasing Sweden.">
+    <meta name="keywords" content="Senior Developer, .NET, Java, Angular, Scrum Master, International Team, Remote Work, MinIT, Athlon España, Athlon Belgium, Santander Leasing Sweden, Mercedes Benz">
     <meta name="author" content="Xavier Roldán">
+    
+    <!-- Open Graph tags for social media -->
+    <meta property="og:title" content="Xavier Roldán - Senior Developer & Team Lead">
+    <meta property="og:description" content="Senior Developer with international team experience at MinIT for Athlon España, Athlon Belgium, and Santander Leasing Sweden.">
+    <meta property="og:image" content="src/ProfilePhoto2023.png">
+    <meta property="og:url" content="https://xavieroldan.github.io/BioSiteCursor/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Xavier Roldán Portfolio">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Xavier Roldán - Senior Developer & Team Lead">
+    <meta name="twitter:description" content="Senior Developer with international team experience at MinIT for Athlon España, Athlon Belgium, and Santander Leasing Sweden.">
+    <meta name="twitter:image" content="src/ProfilePhoto2023.png">
+    
     <title>Xavier Roldán - Senior Developer</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="alternate icon" href="favicon.ico">
@@ -13,32 +28,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Xavier Roldán",
+      "jobTitle": "Senior Developer & Team Lead",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "MinIT"
+      },
+      "description": "Senior Developer with international team experience coordinating teams across Europe and India",
+      "url": "https://xavieroldan.github.io/BioSiteCursor/",
+      "image": "src/ProfilePhoto2023.png",
+      "sameAs": [
+        "https://github.com/xavieroldan"
+      ],
+      "knowsAbout": [
+        ".NET", "Java", "Angular", "SQL", "Jasper Reports", "DevOps", "Agile", "Scrum"
+      ],
+      "alumniOf": "International Team Coordination"
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <div class="container">
         <header class="profile-section">
             <div class="profile-image-container">
                 <a href="index.html" class="profile-image-link">
-                    <img src="src/ProfilePhoto2023.png" alt="Foto de perfil" class="profile-image">
+                    <picture>
+                        <source srcset="src/ProfilePhoto2023.webp" type="image/webp">
+                        <img src="src/ProfilePhoto2023.png" alt="Foto de perfil" class="profile-image">
+                    </picture>
                 </a>
             </div>
             <h1 class="profile-name">Xavier Roldán</h1>
             <h2 class="profile-role">Senior Developer & Team Lead</h2>
-            <a href="index.html" class="nav-comment">// home</a>
+            <a href="index.html" class="nav-comment" aria-label="Go to home page">// home</a>
         </header>
 
-        <main class="content">
+        <main id="main-content" class="content" tabindex="-1">
             <section class="biography">
                 <h3>Sobre Mí</h3>
-                <p class="bio-text">
-                    <strong>Desarrollador Senior</strong> con más de 5 años de experiencia en el desarrollo de aplicaciones empresariales. 
-                    Actualmente trabajo como <strong>Senior IT Technician/Programmer</strong> en <strong>Athlon España</strong>, donde coordino 
-                    un <strong>equipo internacional</strong> en contacto diario con colegas de <strong>Europa e India</strong>. 
-                    Acostumbrado al <strong>trabajo 100% remoto</strong>, gestiono simultáneamente múltiples proyectos y clientes, 
-                    liderando el equipo como Scrum Master del desarrollo internacional de Mercedes Benz. 
-                    Mi experiencia incluye gestión de stakeholders multi-cliente, desarrollo senior con .NET, Java, Angular, SQL y Jasper Reports, 
-                    especializándome en metodologías Agile/Scrum y DevOps para crear soluciones robustas y escalables.
-                </p>
+            <p class="bio-text">
+                <strong>Desarrollador Senior</strong> con más de 5 años de experiencia en el desarrollo de aplicaciones empresariales. 
+                Actualmente trabajo como <strong>Senior IT Technician/Programmer</strong> en <strong>MinIT</strong>, donde coordino 
+                un <strong>equipo internacional</strong> en contacto diario con colegas de <strong>Europa e India</strong>. 
+                Acostumbrado al <strong>trabajo 100% remoto</strong>, gestiono simultáneamente múltiples proyectos y clientes, 
+                incluyendo <strong>Athlon España</strong>, <strong>Athlon Belgium</strong> y <strong>Santander Leasing Sweden</strong>, 
+                liderando el equipo como Scrum Master del desarrollo internacional de Mercedes Benz. 
+                Mi experiencia incluye gestión de stakeholders multi-cliente, desarrollo senior con .NET, Java, Angular, SQL y Jasper Reports, 
+                especializándome en metodologías Agile/Scrum y DevOps para crear soluciones robustas y escalables.
+            </p>
             </section>
 
             <section class="experience">
@@ -47,20 +93,21 @@
                     <div class="experience-item current">
                         <div class="experience-header">
                             <h4>Senior IT Technician / Programmer</h4>
-                            <span class="company">Athlon España</span>
+                            <span class="company">MinIT</span>
                             <span class="duration">Nov 2019 - Presente</span>
                         </div>
-                        <div class="experience-content">
-                            <p class="company-description">Senior IT Technician/Programmer coordinando equipo internacional en el equipo CoC Miles Athlon</p>
-                            <ul class="experience-responsibilities">
-                                <li>Desarrollo senior de software usando .NET, SQL, Java, Angular, Jasper Reports</li>
-                                <li>Coordinación de equipo internacional con colegas de Europa e India</li>
-                                <li>Trabajo 100% remoto con comunicación diaria multi-zona horaria</li>
-                                <li>Liderazgo del equipo y gestión de proyectos (Scrum Master)</li>
-                                <li>Equipo de desarrollo internacional de Mercedes Benz</li>
-                                <li>Gestión de stakeholders y comunicación multi-cliente</li>
-                                <li>Metodología Agile/Scrum y DevOps</li>
-                            </ul>
+                    <div class="experience-content">
+                        <p class="company-description">Senior IT Technician/Programmer coordinando equipo internacional en MinIT para múltiples clientes</p>
+                        <ul class="experience-responsibilities">
+                            <li>Desarrollo senior de software usando .NET, SQL, Java, Angular, Jasper Reports</li>
+                            <li>Coordinación de equipo internacional con colegas de Europa e India</li>
+                            <li>Trabajo 100% remoto con comunicación diaria multi-zona horaria</li>
+                            <li>Liderazgo del equipo y gestión de proyectos (Scrum Master)</li>
+                            <li>Equipo de desarrollo internacional de Mercedes Benz</li>
+                            <li>Gestión de stakeholders y comunicación multi-cliente</li>
+                            <li>Clientes: Athlon España, Athlon Belgium, Santander Leasing Sweden</li>
+                            <li>Metodología Agile/Scrum y DevOps</li>
+                        </ul>
                             <div class="tech-tags">
                                 <span class="tech-tag">Senior Developer</span>
                                 <span class="tech-tag">International Team</span>

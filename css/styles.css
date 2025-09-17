@@ -148,6 +148,27 @@ body {
     box-shadow: var(--shadow-md);
 }
 
+/* Skip link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--primary-color);
+    color: var(--bg-primary);
+    padding: 8px;
+    text-decoration: none;
+    border-radius: var(--border-radius-sm);
+    font-weight: 600;
+    z-index: 1000;
+    transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+    top: 6px;
+    outline: 2px solid var(--text-primary);
+    outline-offset: 2px;
+}
+
 /* Focus states for accessibility */
 .nav-comment:focus {
     outline: 2px solid var(--primary-color);
@@ -191,6 +212,7 @@ body {
         0 0 40px rgba(100, 255, 218, 0.1);
     transition: all 0.3s ease;
     position: relative;
+    will-change: transform, box-shadow;
 }
 
 /* Hover effect for profile image */
@@ -212,6 +234,7 @@ body {
     border-radius: 50%;
     border: 1px solid rgba(100, 255, 218, 0.3);
     animation: rotate 10s linear infinite;
+    will-change: transform;
 }
 
 /* Continuous rotation animation */

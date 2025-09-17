@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn more about Xavier Roldán's professional journey, technical skills, and experience as a Senior Developer coordinating international teams at Athlon España.">
-    <meta name="keywords" content="About Xavier Roldán, Senior Developer Biography, Technical Skills, Professional Experience, International Team Lead">
+    <meta name="description" content="Learn more about Xavier Roldán's professional journey, technical skills, and experience as a Senior Developer coordinating international teams at MinIT for Athlon España, Athlon Belgium, and Santander Leasing Sweden.">
+    <meta name="keywords" content="About Xavier Roldán, Senior Developer Biography, Technical Skills, Professional Experience, International Team Lead, MinIT, Athlon España, Athlon Belgium, Santander Leasing Sweden">
     <meta name="author" content="Xavier Roldán">
+    
+    <!-- Open Graph tags for social media -->
+    <meta property="og:title" content="Acerca de - Xavier Roldán">
+    <meta property="og:description" content="Learn more about Xavier Roldán's professional journey, technical skills, and experience as a Senior Developer coordinating international teams at MinIT.">
+    <meta property="og:image" content="src/ProfilePhoto2023.png">
+    <meta property="og:url" content="https://xavieroldan.github.io/BioSiteCursor/about.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Xavier Roldán Portfolio">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Acerca de - Xavier Roldán">
+    <meta name="twitter:description" content="Learn more about Xavier Roldán's professional journey, technical skills, and experience as a Senior Developer coordinating international teams at MinIT.">
+    <meta name="twitter:image" content="src/ProfilePhoto2023.png">
+    
     <title>Acerca de - Xavier Roldán</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="alternate icon" href="favicon.ico">
@@ -14,34 +29,65 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Xavier Roldán",
+      "jobTitle": "Senior Developer & Team Lead",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "MinIT"
+      },
+      "description": "Senior Developer with international team experience coordinating teams across Europe and India",
+      "url": "https://xavieroldan.github.io/BioSiteCursor/about.html",
+      "image": "src/ProfilePhoto2023.png",
+      "sameAs": [
+        "https://github.com/xavieroldan"
+      ],
+      "knowsAbout": [
+        ".NET", "Java", "Angular", "SQL", "Jasper Reports", "DevOps", "Agile", "Scrum"
+      ],
+      "alumniOf": "International Team Coordination"
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <div class="container">
         <header class="profile-section">
             <div class="profile-image-container">
                 <a href="index.html" class="profile-image-link">
-                    <img src="src/ProfilePhoto2023.png" alt="Foto de perfil" class="profile-image">
+                    <picture>
+                        <source srcset="src/ProfilePhoto2023.webp" type="image/webp">
+                        <img src="src/ProfilePhoto2023.png" alt="Foto de perfil" class="profile-image">
+                    </picture>
                 </a>
             </div>
             <h1 class="profile-name">Xavier Roldán</h1>
             <h2 class="profile-role">Senior Developer & Team Lead</h2>
-            <a href="about.html" class="nav-comment">// about</a>
+            <a href="about.html" class="nav-comment" aria-label="Go to about page">// about</a>
         </header>
 
-        <main class="content">
+        <main id="main-content" class="content" tabindex="-1">
             <section class="biography">
                 <h3>Mi Historia</h3>
                 <p class="bio-text">
-                    Soy Xavier Roldan CAS, un desarrollador de software apasionado por crear 
-                    soluciones tecnológicas que impacten positivamente en la vida de las personas. 
-                    Con experiencia en el desarrollo de aplicaciones web y móviles, me especializo 
-                    en arquitecturas escalables y tecnologías modernas.
+                    Soy Xavier Roldán, un <strong>Desarrollador Senior</strong> con más de 5 años de experiencia 
+                    en el desarrollo de aplicaciones empresariales. Actualmente trabajo como 
+                    <strong>Senior IT Technician/Programmer</strong> en <strong>MinIT</strong>, donde coordino 
+                    un <strong>equipo internacional</strong> en contacto diario con colegas de <strong>Europa e India</strong>.
                 </p>
                 <p class="bio-text">
-                    Mi enfoque se centra en escribir código limpio, mantenible y eficiente, 
-                    siempre buscando las mejores prácticas y las tecnologías más adecuadas 
-                    para cada proyecto. Me apasiona la programación asistida por IA y el 
-                    desarrollo de aplicaciones innovadoras.
+                    Acostumbrado al <strong>trabajo 100% remoto</strong>, gestiono simultáneamente múltiples proyectos y clientes, 
+                    incluyendo <strong>Athlon España</strong>, <strong>Athlon Belgium</strong> y <strong>Santander Leasing Sweden</strong>, 
+                    liderando el equipo como Scrum Master del desarrollo internacional de Mercedes Benz. 
+                    Mi experiencia incluye gestión de stakeholders multi-cliente, desarrollo senior con .NET, Java, Angular, SQL y Jasper Reports, 
+                    especializándome en metodologías Agile/Scrum y DevOps para crear soluciones robustas y escalables.
                 </p>
             </section>
 

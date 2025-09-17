@@ -6,6 +6,21 @@
     <meta name="description" content="Explore Xavier Roldán's recent projects including Damas Funer online game and other software development work showcasing .NET, Java, Angular, and full-stack development skills.">
     <meta name="keywords" content="Xavier Roldán Projects, Software Development Portfolio, .NET Projects, Java Projects, Angular Projects, Damas Funer, Full-Stack Development">
     <meta name="author" content="Xavier Roldán">
+    
+    <!-- Open Graph tags for social media -->
+    <meta property="og:title" content="Proyectos Recientes - Xavier Roldán">
+    <meta property="og:description" content="Explore Xavier Roldán's recent projects including Damas Funer online game and other software development work showcasing .NET, Java, Angular, and full-stack development skills.">
+    <meta property="og:image" content="src/ProfilePhoto2023.png">
+    <meta property="og:url" content="https://xavieroldan.github.io/BioSiteCursor/projects.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Xavier Roldán Portfolio">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Proyectos Recientes - Xavier Roldán">
+    <meta name="twitter:description" content="Explore Xavier Roldán's recent projects including Damas Funer online game and other software development work showcasing .NET, Java, Angular, and full-stack development skills.">
+    <meta name="twitter:image" content="src/ProfilePhoto2023.png">
+    
     <title>Proyectos Recientes - Xavier Roldán</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="alternate icon" href="favicon.ico">
@@ -14,21 +29,51 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Xavier Roldán",
+      "jobTitle": "Senior Developer & Team Lead",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "MinIT"
+      },
+      "description": "Senior Developer with international team experience coordinating teams across Europe and India",
+      "url": "https://xavieroldan.github.io/BioSiteCursor/projects.html",
+      "image": "src/ProfilePhoto2023.png",
+      "sameAs": [
+        "https://github.com/xavieroldan"
+      ],
+      "knowsAbout": [
+        ".NET", "Java", "Angular", "SQL", "Jasper Reports", "DevOps", "Agile", "Scrum"
+      ],
+      "alumniOf": "International Team Coordination"
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <div class="container">
         <header class="profile-section">
             <div class="profile-image-container">
                 <a href="index.html" class="profile-image-link">
-                    <img src="src/ProfilePhoto2023.png" alt="Foto de perfil" class="profile-image">
+                    <picture>
+                        <source srcset="src/ProfilePhoto2023.webp" type="image/webp">
+                        <img src="src/ProfilePhoto2023.png" alt="Foto de perfil" class="profile-image">
+                    </picture>
                 </a>
             </div>
             <h1 class="profile-name">Proyectos Recientes</h1>
             <h2 class="profile-role">Xavier Roldán</h2>
-            <a href="projects.html" class="nav-comment">// projects</a>
+            <a href="projects.html" class="nav-comment" aria-label="Go to projects page">// projects</a>
         </header>
 
-        <main class="content">
+        <main id="main-content" class="content" tabindex="-1">
             <section class="projects-section">
                 <div class="project-card">
                     <div class="project-header">

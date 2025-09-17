@@ -162,6 +162,23 @@ body {
     position: relative;
 }
 
+/* Profile image link styling */
+.profile-image-link {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.profile-image-link:hover {
+    transform: scale(1.02);
+}
+
+.profile-image-link:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 4px;
+    border-radius: 50%;
+}
+
 /* Profile image with tech styling and glow effects */
 .profile-image {
     width: 180px;

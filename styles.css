@@ -1,19 +1,83 @@
-/* Reset and base styles */
+/* ========================================
+   CSS CUSTOM PROPERTIES (VARIABLES)
+   ======================================== */
+
+:root {
+    /* Color Palette */
+    --primary-color: #64ffda;
+    --secondary-color: #ff6b6b;
+    --accent-color: #4ecdc4;
+    --bg-primary: #0f0f23;
+    --bg-secondary: #1a1a2e;
+    --bg-tertiary: #16213e;
+    --text-primary: #ffffff;
+    --text-secondary: #e2e8f0;
+    --text-muted: #b0b0b0;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
+    
+    /* Border Radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-xl: 15px;
+    --border-radius-full: 50%;
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.2);
+    --shadow-glow: 0 0 20px rgba(100, 255, 218, 0.3);
+    
+    /* Typography */
+    --font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', monospace;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.9rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.1rem;
+    --font-size-xl: 1.4rem;
+    --font-size-2xl: 2.2rem;
+    --font-size-3xl: 3.5rem;
+    
+    /* Z-Index */
+    --z-background: -1;
+    --z-content: 1;
+    --z-navigation: 1000;
+}
+
+/* ========================================
+   RESET AND BASE STYLES
+   ======================================== */
+
+/* Global reset for consistent cross-browser styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base body styling with tech theme */
 body {
-    font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', monospace;
+    font-family: var(--font-family);
     line-height: 1.6;
-    color: #e2e8f0;
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    color: var(--text-secondary);
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-tertiary) 100%);
     min-height: 100vh;
     overflow-x: hidden;
 }
 
+/* Main container with responsive max-width */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -22,7 +86,7 @@ body {
     min-height: 100vh;
 }
 
-/* Tech background elements */
+/* Animated tech background with subtle gradient overlays */
 .container::before {
     content: '';
     position: fixed;
@@ -38,7 +102,11 @@ body {
     pointer-events: none;
 }
 
-/* Profile section */
+/* ========================================
+   PROFILE SECTION
+   ======================================== */
+
+/* Main profile header with centered content */
 .profile-section {
     text-align: center;
     margin-bottom: 4rem;
@@ -46,40 +114,55 @@ body {
     position: relative;
 }
 
-/* Navigation comment links - Sticky */
+/* ========================================
+   NAVIGATION
+   ======================================== */
+
+/* Sticky navigation comment links with tech styling */
 .nav-comment {
     position: fixed;
-    top: 2rem;
-    left: 2rem;
-    color: #64ffda;
-    font-size: 0.9rem;
+    top: var(--spacing-lg);
+    left: var(--spacing-lg);
+    color: var(--primary-color);
+    font-size: var(--font-size-sm);
     opacity: 0.7;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: var(--transition-normal);
     cursor: pointer;
-    z-index: 1000;
+    z-index: var(--z-navigation);
     background: rgba(15, 15, 35, 0.8);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-md);
     border: 1px solid rgba(100, 255, 218, 0.2);
     backdrop-filter: blur(10px);
 }
 
+/* Hover effects for navigation links */
 .nav-comment:hover {
     opacity: 1;
-    color: #ffffff;
+    color: var(--text-primary);
     text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
     transform: translateX(5px);
     background: rgba(15, 15, 35, 0.9);
     border-color: rgba(100, 255, 218, 0.4);
-    box-shadow: 0 4px 15px rgba(100, 255, 218, 0.2);
+    box-shadow: var(--shadow-md);
 }
 
+/* Focus states for accessibility */
+.nav-comment:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    opacity: 1;
+    color: var(--text-primary);
+}
+
+/* Profile image container with relative positioning */
 .profile-image-container {
     margin-bottom: 2rem;
     position: relative;
 }
 
+/* Profile image with tech styling and glow effects */
 .profile-image {
     width: 180px;
     height: 180px;
@@ -93,6 +176,7 @@ body {
     position: relative;
 }
 
+/* Hover effect for profile image */
 .profile-image:hover {
     transform: scale(1.05);
     box-shadow: 
@@ -100,6 +184,7 @@ body {
         0 0 60px rgba(100, 255, 218, 0.2);
 }
 
+/* Animated rotating border around profile image */
 .profile-image::after {
     content: '';
     position: absolute;
@@ -112,11 +197,13 @@ body {
     animation: rotate 10s linear infinite;
 }
 
+/* Continuous rotation animation */
 @keyframes rotate {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
 
+/* Main profile name with tech glow effect */
 .profile-name {
     font-size: 3.5rem;
     font-weight: 700;
@@ -126,6 +213,7 @@ body {
     text-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
 }
 
+/* Professional role subtitle */
 .profile-role {
     font-size: 1.4rem;
     font-weight: 400;
@@ -134,17 +222,22 @@ body {
     opacity: 0.9;
 }
 
-/* Content sections */
+/* ========================================
+   CONTENT SECTIONS
+   ======================================== */
+
+/* Main content wrapper */
 .content {
     margin-bottom: 4rem;
 }
 
+/* Biography section with glassmorphism effect */
 .biography {
     margin-bottom: 4rem;
     position: relative;
 }
 
-
+/* Section headings with gradient underline */
 .biography h3,
 .skills h3 {
     font-size: 2.2rem;
@@ -155,6 +248,7 @@ body {
     display: inline-block;
 }
 
+/* Gradient underline for section headings */
 .biography h3::after,
 .skills h3::after {
     content: '';
@@ -167,6 +261,7 @@ body {
     border-radius: 2px;
 }
 
+/* Biography text with glassmorphism container */
 .bio-text {
     font-size: 1.1rem;
     line-height: 1.8;
@@ -782,6 +877,19 @@ body {
     color: #ffffff;
     border-color: #64ffda;
     box-shadow: 0 8px 25px rgba(100, 255, 218, 0.2);
+}
+
+/* Focus states for buttons and links */
+.portfolio-btn:focus, .project-link:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.social-link:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .cta-buttons {

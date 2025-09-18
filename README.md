@@ -88,10 +88,10 @@ BioSiteCursor/
 ## 🛠️ Technical Skills
 
 ### Programming Languages
-- JavaScript, Python, Java, C# (.NET), HTML/CSS
+- JavaScript, PHP, Java, C# (.NET), HTML/CSS
 
 ### Frameworks & Frontend
-- React, Angular, Node.js, Vue.js
+- Spring Boot, Laravel, Angular, Node.js, Vue.js
 
 ### Cloud & DevOps
 - AWS, Docker, GitHub Actions, DevOps

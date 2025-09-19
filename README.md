@@ -6,6 +6,13 @@ A modern, tech-inspired personal portfolio website showcasing professional exper
 
 Visit the live website: [GitHub Pages](https://xavierroldan.com)
 
+## 📄 Curriculum Vitae
+
+Download my resume in both languages:
+
+- **[CV Español](CV/cv_updated.html)** - Versión en castellano
+- **[CV English](CV/cv_updated_en.html)** - English version
+
 ## 🎨 Features
 
 - **Tech-Inspired Design**: Dark theme with neon accents and monospace typography

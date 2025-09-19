@@ -10,8 +10,8 @@ Visit the live website: [GitHub Pages](https://xavierroldan.com)
 
 Download my resume in both languages:
 
-- **[CV Español](CV/cv_updated.html)** - Versión en castellano
-- **[CV English](CV/cv_updated_en.html)** - English version
+- **[CV Español](CV/cv_ES.html)** - Versión en castellano
+- **[CV English](CV/cv_EN.html)** - English version
 
 ## 🎨 Features
 

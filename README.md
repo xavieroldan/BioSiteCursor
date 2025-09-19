@@ -55,10 +55,8 @@ BioSiteCursor/
 │   └── ProfilePhoto2023.png # CV profile image
 ├── src/
 │   ├── ProfilePhoto.webp   # Optimized profile image
-│   ├── ProfilePhoto2023.png # Original profile image
 │   ├── spain.png           # Spanish flag icon
-│   ├── united-kingdom.png  # UK flag icon
-│   └── CV_XavierRoldanCAS_.pdf # PDF resume
+│   └── united-kingdom.png  # UK flag icon
 └── README.md               # This file
 ```
 

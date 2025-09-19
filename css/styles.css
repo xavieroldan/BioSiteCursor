@@ -1020,9 +1020,9 @@ body {
 
 /* Flag icon styling */
 .flag-icon {
-    width: 20px;
-    height: 15px;
-    margin-left: 6px;
+    width: 16px;
+    height: 12px;
+    margin-left: 4px;
     border-radius: 2px;
     object-fit: cover;
     vertical-align: middle;

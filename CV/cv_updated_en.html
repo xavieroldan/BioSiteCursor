@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Xavier Roldán Cabeza</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.5;
+            color: #000;
+            background: white;
+            font-size: 16px;
+        }
+        
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+            min-height: 297mm;
+            padding: 15mm;
+            display: flex;
+            gap: 0;
+        }
+        
+        .sidebar {
+            width: 60mm;
+            background: #008000;
+            padding: 0;
+            color: white;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        
+        .main-content {
+            flex: 1;
+            padding: 20px 25px;
+        }
+        
+        .header {
+            margin-bottom: 25px;
+        }
+        
+        .profile-photo {
+            width: calc(100% - 20px);
+            height: 180px;
+            border-radius: 0;
+            object-fit: cover;
+            border: none;
+            margin: 10px 10px 0 10px;
+            display: block;
+        }
+        
+        .first-name {
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .last-name {
+            font-size: 36px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1a365d;
+            margin-bottom: 20px;
+        }
+        
+        .contact {
+            text-align: right;
+            font-size: 14px;
+            color: #1a365d;
+            line-height: 1.4;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+            padding-top: 20px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #008000;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+        }
+        
+        .objective {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #000;
+            text-align: left;
+        }
+        
+        .experience-item {
+            margin-bottom: 20px;
+            break-inside: avoid;
+        }
+        
+        .experience-header {
+            margin-bottom: 8px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #000;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        .company {
+            font-weight: normal;
+            color: #000;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        .duration {
+            font-size: 14px;
+            color: #000;
+            font-weight: normal;
+        }
+        
+        .job-description {
+            margin-top: 8px;
+        }
+        
+        .job-description li {
+            margin-bottom: 5px;
+            font-size: 14px;
+            line-height: 1.5;
+            list-style: none;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .job-description li::before {
+            content: '■';
+            color: #008000;
+            font-size: 12px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .skill-category-title {
+            font-weight: bold;
+            color: #000;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .skill-list li {
+            font-size: 14px;
+            color: #000;
+            margin-bottom: 6px;
+            padding: 0;
+            background: none;
+            border-radius: 0;
+            display: block;
+        }
+        
+        .education-item {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        
+        .education-title {
+            font-weight: bold;
+            color: #000;
+            font-size: 15px;
+        }
+        
+        .education-institution {
+            color: #000;
+            font-size: 14px;
+            font-style: italic;
+        }
+        
+        .education-year {
+            font-size: 14px;
+            color: #000;
+            font-weight: normal;
+        }
+        
+        .languages {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+        
+        .language-item {
+            text-align: left;
+            padding: 0;
+            background: none;
+            border-radius: 0;
+            font-size: 14px;
+        }
+        
+        .language-level {
+            color: #000;
+            font-size: 13px;
+            font-weight: normal;
+        }
+        
+        .other-data {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .other-data li {
+            margin-bottom: 5px;
+            list-style: none;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .other-data li::before {
+            content: '■';
+            color: #008000;
+            font-size: 12px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        a {
+            color: #1a365d;
+            text-decoration: underline;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
+            @page {
+                size: A4;
+                margin: 8mm;
+            }
+            
+            body { 
+                font-size: 12px; 
+                line-height: 1.4;
+            }
+            
+            .container { 
+                padding: 0; 
+                max-width: none;
+                margin: 0;
+                min-height: auto;
+                display: flex !important;
+                gap: 0 !important;
+                height: auto !important;
+            }
+            
+            .sidebar {
+                width: 45mm !important;
+                padding: 0 !important;
+                background: #008000 !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: flex-start !important;
+            }
+            
+            .main-content {
+                flex: 1 !important;
+                padding: 15px 20px !important;
+            }
+            
+            .section { 
+                margin-bottom: 15px; 
+                page-break-inside: avoid;
+                padding-top: 16px;
+            }
+            
+            .header {
+                margin-bottom: 15px;
+            }
+            
+            .experience-item {
+                margin-bottom: 12px;
+                page-break-inside: avoid;
+            }
+            
+            .profile-photo {
+                width: calc(100% - 15px) !important;
+                height: 120px !important;
+                object-fit: cover !important;
+                border: none !important;
+                margin: 8px 8px 0 8px !important;
+            }
+            
+            .first-name {
+                font-size: 24px !important;
+                color: white !important;
+                margin: 15px 0 !important;
+                text-align: center !important;
+                font-weight: bold !important;
+            }
+            
+            .last-name {
+                font-size: 28px;
+            }
+            
+            .title {
+                font-size: 14px;
+            }
+            
+            .contact {
+                font-size: 11px;
+            }
+            
+            .section-title {
+                font-size: 14px;
+                margin-bottom: 6px;
+            }
+            
+            .objective {
+                font-size: 12px;
+            }
+            
+            .job-title {
+                font-size: 12px;
+            }
+            
+            .company {
+                font-size: 11px;
+            }
+            
+            .duration {
+                font-size: 11px;
+            }
+            
+            .job-description li {
+                font-size: 11px;
+                margin-bottom: 2px;
+            }
+            
+            .skill-category-title {
+                font-size: 12px;
+            }
+            
+            .skill-list li {
+                font-size: 11px;
+                margin-bottom: 3px;
+            }
+            
+            .education-title {
+                font-size: 11px;
+            }
+            
+            .education-institution {
+                font-size: 10px;
+            }
+            
+            .education-year {
+                font-size: 10px;
+            }
+            
+            .language-item {
+                font-size: 11px;
+            }
+            
+            .language-level {
+                font-size: 10px;
+            }
+            
+            .other-data {
+                font-size: 11px;
+            }
+            
+            .other-data li {
+                margin-bottom: 2px;
+            }
+            
+            a {
+                color: #1a365d !important;
+                text-decoration: underline !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="ProfilePhoto2023.png" alt="Xavier Roldán" class="profile-photo">
+            <div class="first-name">Xavier</div>
+        </div>
+        
+        <div class="main-content">
+            <div class="header">
+                <h1 class="last-name">Roldán Cabeza</h1>
+                <p class="title">Senior Developer & Team Lead</p>
+                <div class="contact">
+                    Barcelona, Spain<br>
+                    +34 626 39 44 54<br>
+                    <a href="mailto:xavierroldan@gmail.com">xavierroldan@gmail.com</a><br>
+                    <a href="https://www.linkedin.com/in/xavierroldan" target="_blank">www.linkedin.com/in/xavierroldan</a><br>
+                    <a href="https://github.com/xavieroldan" target="_blank">github.com/xavieroldan</a><br>
+                    <a href="https://xavierroldan.com" target="_blank">xavierroldan.com</a>
+                </div>
+            </div>
+
+        <div class="section">
+            <h2 class="section-title">Professional Objective</h2>
+            <p class="objective">
+                Senior Developer with solid experience in backend development, team leadership, and international multi-client project management. Specialized in .NET, Java, DevOps, and Agile methodologies. My passion for technology drives me to keep up to date with the latest AI and development tools. I seek to continue growing as a tech lead in challenging environments where I can contribute my technical experience and leadership skills.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-title">Senior IT Technician/Programmer</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Coordination of multi-client projects (Athlon España, Athlon Belgium, Santander Leasing Sweden)</li>
+                        <li>Team leadership and Scrum Master responsibilities</li>
+                        <li>Participation in Mercedes Benz international development team</li>
+                        <li>Development and maintenance of applications with .NET, Java, Angular</li>
+                        <li>SQL database management and report generation with Jasper Reports</li>
+                        <li>DevOps practices and CI/CD implementation</li>
+                    </ul>
+                </div>
+                <div class="company">MinIT - 5 years</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-title">Software Application Developer</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Internal Business Intelligence project development in direct communication with CEO</li>
+                        <li>Relational database design in MySQL</li>
+                        <li>Complete REST API development in Spring Boot</li>
+                        <li>Google Sheets API integration for Java backend</li>
+                        <li>Local frontend creation with Bootstrap and JavaScript</li>
+                        <li>Delivered projects successfully within agreed deadlines</li>
+                    </ul>
+                </div>
+                <div class="company">AutoCloud Servicios Integrales S.L. - 4 months</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-title">Process Technician</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Business Intelligence system development for DMS Autoline application</li>
+                        <li>Provided specialized help desk support in sales and after-sales</li>
+                        <li>Managed group reporting using SQL</li>
+                        <li>Online training content development in Moodle</li>
+                        <li>DMS tools implementation in new branches</li>
+                    </ul>
+                </div>
+                <div class="company">QUADIS – Servicios Operativos S.A. - 2 years</div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-title">Training Center Manager</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Business Intelligence system creation for the center</li>
+                        <li>Training follow-up IT system development</li>
+                        <li>Led the team and managed commercial strategy</li>
+                        <li>IT area and help desk responsibility</li>
+                    </ul>
+                </div>
+                <div class="company">Iniciativas Empresariales Freedom S.L. - 4 years</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Technical Competencies</h2>
+            <div class="skills-grid">
+                        <div class="skill-category">
+                            <div class="skill-category-title">Programming Languages</div>
+                            <ul class="skill-list">
+                                <li>.NET (C#)</li>
+                                <li>Java</li>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                                <li>HTML/CSS</li>
+                            </ul>
+                        </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Frameworks and Frontend</div>
+                    <ul class="skill-list">
+                        <li>Angular</li>
+                        <li>Spring Boot</li>
+                        <li>Node.js</li>
+                        <li>Laravel</li>
+                        <li>Vue.js</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Cloud & DevOps</div>
+                    <ul class="skill-list">
+                        <li>AWS</li>
+                        <li>Docker</li>
+                        <li>GitHub Actions</li>
+                        <li>DevOps</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-top: 20px;">
+                <div class="skill-category">
+                    <div class="skill-category-title">Databases</div>
+                    <ul class="skill-list">
+                        <li>Oracle SQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-title">AI Assistants</div>
+                    <ul class="skill-list">
+                        <li>GitHub Copilot</li>
+                        <li>Cursor</li>
+                        <li>ChatGPT</li>
+                        <li>Claude</li>
+                        <li>Gemini</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-category-title">Development Tools</div>
+                    <ul class="skill-list">
+                        <li>Git</li>
+                        <li>Jira</li>
+                        <li>Eclipse</li>
+                        <li>Visual Studio</li>
+                        <li>Jasper Reports</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Languages</h2>
+            <div class="languages">
+                <div class="language-item">
+                    <div class="language-name">Spanish</div>
+                    <div class="language-level">Native</div>
+                </div>
+                <div class="language-item">
+                    <div class="language-name">Catalan</div>
+                    <div class="language-level">Native</div>
+                </div>
+                <div class="language-item">
+                    <div class="language-name">English</div>
+                    <div class="language-level">B1</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <div class="education-content">
+                    <div class="education-title">BackEnd Developer Bootcamp</div>
+                    <div class="education-institution">Barcelona IT Academy - 350 hours</div>
+                </div>
+                <div class="education-year">2019</div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <div class="education-title">Industrial Electronics Technician</div>
+                    <div class="education-institution">IFP Pedraforca, Hospitalet del Llobregat</div>
+                </div>
+                <div class="education-year">1995-2000</div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <div class="education-title">Electrician Assistant</div>
+                    <div class="education-institution">IES Joan Coromines, Benicarló</div>
+                </div>
+                <div class="education-year">2000-2001</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Additional Information</h2>
+            <div class="other-data">
+                <ul>
+                    <li>Driving license A2 and B (since 1995)</li>
+                    <li>Strong willingness to learn continuously</li>
+                    <li>Experience in international team leadership</li>
+                    <li>Advanced knowledge of Google suite and productivity tools</li>
+                    <li>Experience working remotely and in hybrid environments</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to generate PDF
+        function generatePDF() {
+            window.print();
+        }
+        
+        // Button to generate PDF (optional)
+        document.addEventListener('DOMContentLoaded', function() {
+            const button = document.createElement('button');
+            button.textContent = 'Generate PDF';
+            button.style.cssText = 'position: fixed; top: 10px; right: 10px; z-index: 1000; padding: 10px; background: #1a365d; color: white; border: none; border-radius: 5px; cursor: pointer;';
+            button.onclick = generatePDF;
+            document.body.appendChild(button);
+            
+            // Hide button when printing
+            const style = document.createElement('style');
+            style.textContent = '@media print { button { display: none !important; } }';
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>

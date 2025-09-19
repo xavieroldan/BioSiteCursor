@@ -2,10 +2,6 @@
 
 A modern, tech-inspired personal portfolio website showcasing professional experience, technical skills, and recent projects.
 
-## 🚀 Live Demo
-
-Visit the live website: [GitHub Pages](https://xavierroldan.com)
-
 ## 📄 Curriculum Vitae
 
 Download my resume in both languages:

@@ -52,7 +52,7 @@ BioSiteCursor/
 ├── CV/
 │   ├── cv_ES.html          # CV in Spanish
 │   ├── cv_EN.html          # CV in English
-│   └── ProfilePhoto.png # CV profile image
+│   └── ProfilePhoto.png    # CV profile image
 ├── src/
 │   ├── ProfilePhoto.webp   # Optimized profile image
 │   ├── spain.png           # Spanish flag icon

@@ -766,17 +766,17 @@
     </div>
 
     <script>
-        // Función para descargar PDF
-        function downloadPDF() {
-            window.open('CV Xavier Roldán Cabeza_ES.pdf', '_blank');
+        // Función para generar PDF
+        function generatePDF() {
+            window.print();
         }
         
-        // Botón para descargar PDF
+        // Botón para generar PDF (opcional)
         document.addEventListener('DOMContentLoaded', function() {
             const button = document.createElement('button');
-            button.textContent = 'Descargar PDF';
+            button.textContent = 'Generar PDF';
             button.style.cssText = 'position: fixed; top: 10px; right: 10px; z-index: 1000; padding: 10px; background: #1a365d; color: white; border: none; border-radius: 5px; cursor: pointer;';
-            button.onclick = downloadPDF;
+            button.onclick = generatePDF;
             document.body.appendChild(button);
             
             // Ocultar botón al imprimir

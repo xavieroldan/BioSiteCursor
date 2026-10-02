@@ -279,6 +279,7 @@ body {
 
 /* Section headings with gradient underline */
 .biography h3,
+.services h3,
 .skills h3 {
     font-size: 2.2rem;
     font-weight: 600;
@@ -290,6 +291,7 @@ body {
 
 /* Gradient underline for section headings */
 .biography h3::after,
+.services h3::after,
 .skills h3::after {
     content: '';
     position: absolute;
@@ -745,6 +747,7 @@ body {
     }
     
     .biography h3,
+    .services h3,
     .skills h3 {
         font-size: 1.5rem;
     }
@@ -1057,4 +1060,97 @@ body {
     .profile-image {
         filter: grayscale(100%);
     }
+}
+
+/* ========================================
+   BRANDING UPDATE: tagline, language switch, services
+   ======================================== */
+
+/* Short keyword tagline under the role */
+.profile-tagline {
+    color: var(--text-muted);
+    font-size: var(--font-size-sm);
+    margin: 0 0 var(--spacing-md);
+    letter-spacing: 0.5px;
+}
+
+/* Fixed language switch mirroring the nav comment on the right */
+.lang-switch {
+    position: fixed;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    z-index: var(--z-navigation);
+    display: flex;
+    gap: var(--spacing-xs);
+    align-items: center;
+    font-size: var(--font-size-sm);
+    background: rgba(15, 15, 35, 0.8);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius-md);
+    border: 1px solid rgba(100, 255, 218, 0.2);
+    backdrop-filter: blur(10px);
+    color: var(--text-muted);
+}
+
+.lang-switch a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: var(--transition-normal);
+}
+
+.lang-switch a:hover,
+.lang-switch a:focus,
+.lang-switch a[aria-current="true"] {
+    color: var(--primary-color);
+}
+
+.lang-switch a:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+    .lang-switch {
+        top: var(--spacing-sm);
+        right: var(--spacing-sm);
+    }
+}
+
+/* Freelance services */
+.services {
+    margin-bottom: 4rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.service-card {
+    background: rgba(26, 26, 46, 0.6);
+    border: 1px solid rgba(100, 255, 218, 0.15);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-md);
+}
+
+.service-card h4 {
+    color: var(--primary-color);
+    margin: 0 0 var(--spacing-xs);
+}
+
+.service-card p {
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.services-cta {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+}
+
+/* Non-clickable project badge for private code */
+span.project-link.disabled {
+    cursor: default;
 }

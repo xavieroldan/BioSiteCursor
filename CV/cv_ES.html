@@ -529,6 +529,15 @@
                 text-decoration: underline !important;
             }
         }
+
+        /* Personal projects and earlier career blocks */
+        .project-text { font-size: 14px; line-height: 1.5; margin-top: 3px; }
+        .prev-career { font-size: 14px; margin-top: 4px; }
+        @media print {
+            .project-text { font-size: 11px; }
+            .prev-career { font-size: 11px; }
+            .skills-grid { gap: 12px; }
+        }
     </style>
 </head>
 <body>
@@ -537,123 +546,120 @@
             <img src="ProfilePhoto.png" alt="Xavier Roldán" class="profile-photo">
             <div class="first-name">Xavier</div>
         </div>
-        
+
         <div class="main-content">
             <div class="header">
                 <h1 class="last-name">Roldán Cabeza</h1>
-                <p class="title">Senior Developer & Team Lead</p>
+                <p class="title">Senior Developer &amp; Team Lead</p>
                 <div class="contact">
-                    Barcelona, España<br>
+                    Barcelona, España · Remoto UE<br>
                     <a href="mailto:xavierroldan@gmail.com">xavierroldan@gmail.com</a><br>
-                    <a href="https://www.linkedin.com/in/xavierroldan" target="_blank">www.linkedin.com/in/xavierroldan</a><br>
-                    <a href="https://github.com/xavieroldan" target="_blank">github.com/xavieroldan</a><br>
-                    <a href="https://xavierroldan.com" target="_blank">xavierroldan.com</a>
+                    <a href="https://www.linkedin.com/in/xavierroldan/" target="_blank" rel="noopener">linkedin.com/in/xavierroldan</a><br>
+                    <a href="https://github.com/xavieroldan" target="_blank" rel="noopener">github.com/xavieroldan</a><br>
+                    <a href="https://xavierroldan.com" target="_blank" rel="noopener">xavierroldan.com</a>
                 </div>
             </div>
 
         <div class="section">
-            <h2 class="section-title">Objetivo Profesional</h2>
-            <p class="objective">
-                Senior Developer con sólida experiencia en desarrollo backend, liderazgo de equipos y gestión de proyectos multi-cliente internacionales. Especializado en tecnologías .NET, Java, DevOps y metodologías ágiles. Mi pasión por la tecnología me impulsa a mantenerme actualizado con las últimas herramientas de IA y desarrollo. Busco seguir creciendo como tech lead en entornos desafiantes donde pueda aportar mi experiencia técnica y habilidades de liderazgo.
-            </p>
+            <h2 class="section-title">Perfil</h2>
+            <p class="objective">Senior Developer y Team Lead con <strong>7 años</strong> en software empresarial para el sector leasing y movilidad (Athlon, Santander Leasing, Mercedes Benz). Lidero técnicamente un equipo de 3-5 personas en remoto con colegas de Europa e India, hago de Scrum Master y programo a diario con .NET, Java y Angular. Diseño APIs REST y monto pipelines CI/CD con GitHub Actions y Azure DevOps. Antes, más de 15 años en ventas B2B y soporte IT: entiendo el negocio del cliente.</p>
         </div>
 
         <div class="section">
             <h2 class="section-title">Experiencia Profesional</h2>
-            
             <div class="experience-item">
                 <div class="experience-header">
-                    <div>
-                        <div class="job-title">Senior IT Technician/Programmer</div>
-                        <div class="company">MinIT</div>
-                    </div>
-                    <div class="duration">5 años</div>
+                    <div class="job-title">Senior Developer &amp; Team Lead</div>
+                    <div class="company">MinIT · <span class="duration">Nov 2019 – Presente</span></div>
                 </div>
                 <div class="job-description">
                     <ul>
-                        <li>Coordinación de proyectos multi-cliente (Athlon España, Athlon Belgium, Santander Leasing Sweden)</li>
-                        <li>Liderazgo de equipos y responsabilidades como Scrum Master</li>
-                        <li>Participación en equipo internacional de desarrollo Mercedes Benz</li>
-                        <li>Desarrollo y mantenimiento de aplicaciones con .NET, Java, Angular</li>
-                        <li>Gestión de bases de datos SQL y generación de reportes con Jasper Reports</li>
-                        <li>Implementación de prácticas DevOps y CI/CD</li>
+                        <li>Liderazgo técnico de un equipo de 3-5 personas; coordinación diaria con colegas de Europa e India (100% remoto)</li>
+                        <li>Scrum Master del equipo de desarrollo internacional para Mercedes Benz</li>
+                        <li>Proyectos multi-cliente para Athlon España, Athlon Belgium y Santander Leasing Sweden: 15+ proyectos entregados en 2 años</li>
+                        <li>Pipelines CI/CD con GitHub Actions y Azure DevOps (build, imágenes Docker, despliegue a entornos) para Athlon y Santander Leasing: despliegues de horas a minutos</li>
+                        <li>Diseño y desarrollo de APIs REST para la integración entre sistemas</li>
+                        <li>Desarrollo con .NET, Java, Angular, Oracle SQL y Jasper Reports; participación en la migración de servidores a AWS</li>
                     </ul>
                 </div>
             </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-title">Software Application Developer (Freelance)</div>
+                    <div class="company">AutoCloud Servicios Integrales S.L. · <span class="duration">Jul 2019 – Nov 2019</span></div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Proyecto interno de Business Intelligence en comunicación directa con el CEO</li>
+                        <li>API REST completa en Spring Boot y base de datos relacional en MySQL</li>
+                        <li>Integración con Google Sheets API y frontend con Bootstrap y JavaScript, entregado en plazo</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-title">Responsable de Centro Formativo</div>
+                    <div class="company">Iniciativas Empresariales Freedom S.L. · <span class="duration">2014 – 2018</span></div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Liderazgo de equipo y gestión de la estrategia comercial</li>
+                        <li>Desarrollo de un sistema de Business Intelligence y de seguimiento formativo; responsable de informática y help desk</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="job-title">Técnico en Procesos</div>
+                    <div class="company">QUADIS – Servicios Operativos S.A. · <span class="duration">2006 – 2008</span></div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Business Intelligence para el DMS Autoline e informes del grupo con SQL</li>
+                        <li>Help desk de venta y postventa, implantación del DMS en nuevas delegaciones y formación online en Moodle</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="objective prev-career"><strong>Trayectoria previa (2001–2018):</strong> ventas B2B y automoción (Rexel, Quadis, Motor Llansà): carteras de hasta 150 cuentas. 1.<sup>er</sup> puesto de España y Portugal en la certificación de vendedores NISSAN.</p>
+        </div>
 
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title">Software Application Developer</div>
-                        <div class="company">AutoCloud Servicios Integrales S.L.</div>
+        <div class="section">
+            <h2 class="section-title">Proyectos Personales</h2>
+                <div class="education-item">
+                    <div class="education-content">
+                        <div class="education-title">MarinaConnect <span class="education-institution">· marinaconnect.es · En producción</span></div>
+                        <div class="project-text">Plataforma de alquiler comercial temporal de embarcaciones adaptada a la normativa BOE-A-2025-15205. WordPress, PHP, despliegue con GitHub Actions.</div>
                     </div>
-                    <div class="duration">4 meses</div>
                 </div>
-                <div class="job-description">
-                    <ul>
-                        <li>Desarrollo de proyecto interno de Business Intelligence en comunicación directa con CEO</li>
-                        <li>Diseño de base de datos relacional en MySQL</li>
-                        <li>Desarrollo de API Rest completa en Spring Boot</li>
-                        <li>Integración con API de Google Sheets para backend en Java</li>
-                        <li>Creación de frontend local con Bootstrap y JavaScript</li>
-                        <li>Entrega exitosa del proyecto dentro de plazos establecidos</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title">Técnico en Procesos</div>
-                        <div class="company">QUADIS – Servicios Operativos S.A.</div>
+                <div class="education-item">
+                    <div class="education-content">
+                        <div class="education-title">RutaCrono <span class="education-institution">· PWA · Beta privada</span></div>
+                        <div class="project-text">App para conductores profesionales: rutas, tiempos de conducción y descanso según normativa UE, GPS y lógica de tacógrafo. JavaScript, PHP, API REST, MySQL.</div>
                     </div>
-                    <div class="duration">2 años</div>
                 </div>
-                <div class="job-description">
-                    <ul>
-                        <li>Desarrollo de sistema de Business Intelligence para aplicación DMS Autoline</li>
-                        <li>Help desk especializado en área de venta y postventa</li>
-                        <li>Gestión de informes del grupo con lenguaje SQL</li>
-                        <li>Desarrollo de contenido formativo online en Moodle</li>
-                        <li>Implantación de herramientas DMS en nuevas delegaciones</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <div class="job-title">Responsable de Centro Formativo</div>
-                        <div class="company">Iniciativas Empresariales Freedom S.L.</div>
+                <div class="education-item">
+                    <div class="education-content">
+                        <div class="education-title">Mapa d'incidències <span class="education-institution">· En producción · Veïns per Cubelles</span></div>
+                        <div class="project-text">Mapa colaborativo de incidencias vecinales con roles, moderación y RGPD. PHP 8.2, MySQL, Leaflet, patrón Repository.</div>
                     </div>
-                    <div class="duration">4 años</div>
                 </div>
-                <div class="job-description">
-                    <ul>
-                        <li>Creación de sistema de Business Intelligence del centro</li>
-                        <li>Desarrollo de sistema informático de seguimiento formativo</li>
-                        <li>Liderazgo de equipo y gestión de estrategia comercial</li>
-                        <li>Responsable del área informática y help desk</li>
-                    </ul>
-                </div>
-            </div>
         </div>
 
         <div class="section">
             <h2 class="section-title">Competencias Técnicas</h2>
             <div class="skills-grid">
-                        <div class="skill-category">
-                            <div class="skill-category-title">Lenguajes de Programación</div>
-                            <ul class="skill-list">
-                                <li>.NET (C#)</li>
-                                <li>Java</li>
-                                <li>JavaScript</li>
-                                <li>PHP</li>
-                                <li>HTML/CSS</li>
-                            </ul>
-                        </div>
                 <div class="skill-category">
-                    <div class="skill-category-title">Frameworks y Frontend</div>
+                    <div class="skill-category-title">Lenguajes</div>
+                    <ul class="skill-list">
+                        <li>C# (.NET)</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Frameworks</div>
                     <ul class="skill-list">
                         <li>Angular</li>
                         <li>Spring Boot</li>
@@ -663,46 +669,41 @@
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <div class="skill-category-title">Cloud & DevOps</div>
+                    <div class="skill-category-title">CI/CD &amp; Cloud</div>
                     <ul class="skill-list">
-                        <li>AWS</li>
-                        <li>Docker</li>
                         <li>GitHub Actions</li>
-                        <li>DevOps</li>
+                        <li>Azure DevOps</li>
+                        <li>Docker</li>
+                        <li>AWS</li>
                     </ul>
                 </div>
-            </div>
-            
-            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-top: 20px;">
                 <div class="skill-category">
                     <div class="skill-category-title">Bases de Datos</div>
                     <ul class="skill-list">
                         <li>Oracle SQL</li>
                         <li>PostgreSQL</li>
-                        <li>MongoDB</li>
                         <li>MySQL</li>
+                        <li>MongoDB</li>
                     </ul>
                 </div>
-                
                 <div class="skill-category">
-                    <div class="skill-category-title">IA y Asistencia</div>
+                    <div class="skill-category-title">Gestión</div>
                     <ul class="skill-list">
-                        <li>GitHub Copilot</li>
-                        <li>Cursor</li>
-                        <li>ChatGPT</li>
-                        <li>Claude</li>
-                        <li>Gemini</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <div class="skill-category-title">Herramientas de Desarrollo</div>
-                    <ul class="skill-list">
-                        <li>Git</li>
+                        <li>Scrum</li>
+                        <li>Agile</li>
                         <li>Jira</li>
-                        <li>Eclipse</li>
-                        <li>Visual Studio</li>
+                        <li>Git</li>
                         <li>Jasper Reports</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">IA y Automatización</div>
+                    <ul class="skill-list">
+                        <li>n8n</li>
+                        <li>Hugging Face</li>
+                        <li>Claude, Cursor, Copilot</li>
+                        <li>ChatGPT, Gemini, NotebookLM</li>
+                        <li>Prompt engineering</li>
                     </ul>
                 </div>
             </div>
@@ -721,33 +722,40 @@
                 </div>
                 <div class="language-item">
                     <div class="language-name">Inglés</div>
-                    <div class="language-level">B1</div>
+                    <div class="language-level">B2 · uso profesional diario</div>
                 </div>
             </div>
         </div>
 
         <div class="section">
-            <h2 class="section-title">Estudios</h2>
+            <h2 class="section-title">Formación</h2>
             <div class="education-item">
                 <div class="education-content">
-                    <div class="education-title">BackEnd Developer Bootcamp</div>
-                    <div class="education-institution">Barcelona IT Academy - 350 horas</div>
+                    <div class="education-title">BackEnd Developer Bootcamp (Java, Spring Boot)</div>
+                    <div class="education-institution">IT Academy · Barcelona Activa – 350 horas</div>
+                </div>
+                <div class="education-year">2019</div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <div class="education-title">Programación C# y .NET</div>
+                    <div class="education-institution">CIFO La Violeta</div>
                 </div>
                 <div class="education-year">2019</div>
             </div>
             <div class="education-item">
                 <div class="education-content">
                     <div class="education-title">Técnico en Electrónica Industrial</div>
-                    <div class="education-institution">IFP Pedraforca, Hospitalet del Llobregat</div>
+                    <div class="education-institution">IFP Pedraforca, L'Hospitalet de Llobregat</div>
                 </div>
-                <div class="education-year">1995-2000</div>
+                <div class="education-year">1997 – 2000</div>
             </div>
             <div class="education-item">
                 <div class="education-content">
                     <div class="education-title">Auxiliar Electricista</div>
                     <div class="education-institution">IES Joan Coromines, Benicarló</div>
                 </div>
-                <div class="education-year">2000-2001</div>
+                <div class="education-year">2000 – 2001</div>
             </div>
         </div>
 
@@ -755,13 +763,11 @@
             <h2 class="section-title">Otros Datos</h2>
             <div class="other-data">
                 <ul>
-                    <li>Carnet de conducir A2 y B (desde 1995)</li>
-                    <li>Predisposición al aprendizaje continuo</li>
-                    <li>Experiencia en liderazgo de equipos internacionales</li>
-                    <li>Conocimiento avanzado de suite Google y herramientas de productividad</li>
-                    <li>Experiencia en trabajo remoto y metodologías híbridas</li>
+                    <li>Carnet de conducir A2 y B</li>
+                    <li>Patrón de Embarcaciones de Recreo (PER)</li>
                 </ul>
             </div>
+        </div>
         </div>
     </div>
 

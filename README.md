@@ -41,11 +41,14 @@ Download my resume in both languages:
 
 ```
 BioSiteCursor/
-├── index.html              # Home page
-├── about.html              # About/Experience page
-├── projects.html           # Projects showcase
+├── index.html              # Home page (ES)
+├── about.html              # About page (ES)
+├── projects.html           # Portfolio page (ES)
+├── en/                     # English version of the three pages
 ├── mant.html               # Maintenance page
-├── sitemap.xml             # XML sitemap for SEO
+├── sitemap.xml             # XML sitemap with hreflang
+├── robots.txt              # Crawler rules and sitemap location
+├── portfolio/              # READMEs for upcoming portfolio repos (not deployed)
 ├── favicon.svg             # Tech-style favicon
 ├── css/
 │   └── styles.css          # Unified stylesheet
@@ -83,11 +86,11 @@ BioSiteCursor/
 ## 💼 Professional Experience
 
 ### Current Position
-**Senior IT Technician/Programmer** at MinIT (Nov 2019 - Present)
-- Multi-client project coordination (Athlon España, Athlon Belgium, Santander Leasing Sweden)
-- Team leadership and Scrum Master responsibilities
-- International Mercedes Benz development team
-- Technologies: .NET, Java, Angular, SQL, Jasper Reports, DevOps
+**Senior Developer & Team Lead** at MinIT (Nov 2019 - Present)
+- Multi-client projects for Arval, Athlon (Spain, Italy, Portugal, UK, Belgium and Sweden; now part of Arval) and Santander Leasing Sweden
+- Technical lead of a 3-5 person team and Scrum Master of the international development team
+- CI/CD pipelines with GitHub Actions and Azure DevOps
+- Technologies: .NET, Java, Angular, Oracle SQL, Jasper Reports, Docker
 
 ### Previous Experience
 **Software Application Developer** at AutoCloud Renting (Jul 2019 - Nov 2019)

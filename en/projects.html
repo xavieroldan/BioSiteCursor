@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects · Xavier Roldán</title>
-    <meta name="description" content="Xavier Roldán's portfolio in progress: public projects on CI/CD, n8n automation and applied AI.">
+    <meta name="description" content="Xavier Roldán's portfolio: CI/CD templates for .NET and Java, ticket triage with Hugging Face and job-search automation with n8n and Claude.">
     <meta name="author" content="Xavier Roldán">
     <link rel="canonical" href="https://xavierroldan.com/en/projects.html">
     <link rel="alternate" hreflang="es" href="https://xavierroldan.com/projects.html">
@@ -13,7 +13,7 @@
 
     <!-- Open Graph tags for social media -->
     <meta property="og:title" content="Projects · Xavier Roldán">
-    <meta property="og:description" content="Xavier Roldán's portfolio in progress: public projects on CI/CD, n8n automation and applied AI.">
+    <meta property="og:description" content="Xavier Roldán's portfolio: CI/CD templates for .NET and Java, ticket triage with Hugging Face and job-search automation with n8n and Claude.">
     <meta property="og:image" content="https://xavierroldan.com/src/ProfilePhoto.webp">
     <meta property="og:image:width" content="400">
     <meta property="og:image:height" content="400">
@@ -27,7 +27,7 @@
     <!-- Twitter Card tags -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Projects · Xavier Roldán">
-    <meta name="twitter:description" content="Xavier Roldán's portfolio in progress: public projects on CI/CD, n8n automation and applied AI.">
+    <meta name="twitter:description" content="Xavier Roldán's portfolio: CI/CD templates for .NET and Java, ticket triage with Hugging Face and job-search automation with n8n and Claude.">
     <meta name="twitter:image" content="https://xavierroldan.com/src/ProfilePhoto.webp">
 
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -119,27 +119,87 @@
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-icon">
-                            <i class="fas fa-code-branch" aria-hidden="true"></i>
+                            <i class="fas fa-rocket" aria-hidden="true"></i>
                         </div>
                         <div class="project-info">
-                            <h3>Portfolio in progress</h3>
-                            <span class="project-category">Coming soon</span>
+                            <h3>CI/CD Pipeline Templates</h3>
+                            <span class="project-category">DevOps · In progress</span>
                         </div>
                     </div>
                     <div class="project-description">
-                        <p>I'm building public GitHub projects on CI/CD, n8n automation and applied AI. In the meantime, follow my activity on GitHub or email me for details about my experience.</p>
+                        <p>Reusable pipeline templates for .NET and Java projects, in GitHub Actions and Azure DevOps. They cover build, tests, quality analysis, Docker image and environment deployments (DEV, TEST, PROD) with manual approvals. They use OIDC authentication with no long-lived secrets, dependency caching and semantic versioning. Two sample apps (.NET Minimal API and Spring Boot) exercise them end to end.</p>
                     </div>
                     <div class="project-tech">
-                                <span class="tech-tag">CI/CD</span>
-                                <span class="tech-tag">n8n</span>
-                                <span class="tech-tag">AI</span>
-                                <span class="tech-tag">GitHub</span>
+                                <span class="tech-tag">GitHub Actions</span>
+                                <span class="tech-tag">Azure DevOps</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">.NET</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">OIDC</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/xavieroldan" class="project-link" target="_blank" rel="noopener">
-                            <i class="fab fa-github" aria-hidden="true"></i>
-                            View GitHub
-                        </a>
+                        <span class="project-link disabled">
+                            <i class="fas fa-lock" aria-hidden="true"></i>
+                            Demo on request
+                        </span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-robot" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>AI Ticket Triage</h3>
+                            <span class="project-category">Applied AI · In progress</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>Service that classifies incidents and support tickets by category and urgency using open-source Hugging Face models (zero-shot, multilingual), with no training data required. FastAPI REST API, interactive Gradio demo on Hugging Face Spaces, Docker image and CI with tests and accuracy evaluation on a labelled dataset.</p>
+                    </div>
+                    <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Hugging Face</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">Gradio</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">GitHub Actions</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-link disabled">
+                            <i class="fas fa-lock" aria-hidden="true"></i>
+                            Demo on request
+                        </span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-project-diagram" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3>n8n Job Scout</h3>
+                            <span class="project-category">Automation + AI · In progress</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>n8n workflow that collects job offers from email alerts and RSS feeds, normalises them, removes duplicates and uses Claude to score them against a professional profile. It sends a daily Telegram digest with the best matches and logs everything to Google Sheets. Ships with versioned prompts, the exported JSON workflow and a Docker deployment guide.</p>
+                    </div>
+                    <div class="project-tech">
+                                <span class="tech-tag">n8n</span>
+                                <span class="tech-tag">Claude API</span>
+                                <span class="tech-tag">Prompt engineering</span>
+                                <span class="tech-tag">Telegram</span>
+                                <span class="tech-tag">Google Sheets</span>
+                                <span class="tech-tag">Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-link disabled">
+                            <i class="fas fa-lock" aria-hidden="true"></i>
+                            Demo on request
+                        </span>
                     </div>
                 </div>
             </section>

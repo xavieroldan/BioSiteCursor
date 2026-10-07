@@ -181,25 +181,25 @@
                         </div>
                         <div class="project-info">
                             <h3>n8n Job Scout</h3>
-                            <span class="project-category">Automation + AI · In progress</span>
+                            <span class="project-category">Automation + AI · v0.1 available</span>
                         </div>
                     </div>
                     <div class="project-description">
-                        <p>n8n workflow that collects job offers from email alerts and RSS feeds, normalises them, removes duplicates and uses Claude to score them against a professional profile. It sends a daily Telegram digest with the best matches and logs everything to Google Sheets. Ships with versioned prompts, the exported JSON workflow and a Docker deployment guide.</p>
+                        <p>n8n workflow that reads job offers from RSS feeds, normalises them, removes duplicates across runs and uses Claude to score each one from 0 to 100 against a professional profile, with reasons and red flags. Every morning it sends a Telegram digest with the best matches. The Code-node logic is generated from tested JavaScript (19 tests) and validated in CI with GitHub Actions. Deployed with Docker Compose.</p>
                     </div>
                     <div class="project-tech">
                                 <span class="tech-tag">n8n</span>
                                 <span class="tech-tag">Claude API</span>
                                 <span class="tech-tag">Prompt engineering</span>
                                 <span class="tech-tag">Telegram</span>
-                                <span class="tech-tag">Google Sheets</span>
                                 <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">GitHub Actions</span>
                     </div>
                     <div class="project-links">
-                        <span class="project-link disabled">
-                            <i class="fas fa-lock" aria-hidden="true"></i>
-                            Demo on request
-                        </span>
+                        <a href="https://github.com/xavieroldan/n8n-job-scout" class="project-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            View on GitHub
+                        </a>
                     </div>
                 </div>
             </section>

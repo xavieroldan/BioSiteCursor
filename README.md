@@ -48,7 +48,6 @@ BioSiteCursor/
 ├── mant.html               # Maintenance page
 ├── sitemap.xml             # XML sitemap with hreflang
 ├── robots.txt              # Crawler rules and sitemap location
-├── portfolio/              # READMEs for upcoming portfolio repos (not deployed)
 ├── favicon.svg             # Tech-style favicon
 ├── css/
 │   └── styles.css          # Unified stylesheet
